@@ -8,7 +8,7 @@ import "@testing-library/jest-dom/vitest"
 describe('Title', () => {
   it('should render with the children', () => {
     render(<Title>My Title</Title>)
-    screen.debug()
+    // screen.debug()
     const heading = screen.getByRole('heading', { name: /my title/i })
     expect(heading).toBeInTheDocument()
   })
