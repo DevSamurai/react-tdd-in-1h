@@ -9,7 +9,7 @@ describe('Title', () => {
   it('should render with the children', () => {
     render(<Title>My Title</Title>)
     // screen.debug()
-    const heading = screen.getByRole('heading', { name: /my title/i })
+    const heading = screen.getByRole('heading', { name: /my title 2/i })
     expect(heading).toBeInTheDocument()
   })
 })
